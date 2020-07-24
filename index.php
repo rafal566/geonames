@@ -27,6 +27,7 @@
     var data = null;
     $.ajax({
         method: "GET",
+        cache: false,
         url: "response.php",
         success: function (data) {
           data= JSON.parse(data);
